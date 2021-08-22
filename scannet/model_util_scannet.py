@@ -89,3 +89,6 @@ def rotate_aligned_boxes(input_boxes, rot_mat):
     new_lengths = np.stack((new_dx, new_dy, lengths[:,2]), axis=1)
                   
     return np.concatenate([new_centers, new_lengths], axis=1)
+
+if __name__ == "__main__":
+    ScannetDatasetConfig()
